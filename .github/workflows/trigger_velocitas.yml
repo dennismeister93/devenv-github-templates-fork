@@ -1,0 +1,18 @@
+name: Trigger Velocitas Upgrade Workflow
+
+on:
+  push:
+    branches:
+      - main  # or whichever branch you want to trigger this workflow from
+
+jobs:
+  trigger:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Trigger Workflow
+        run: |
+          echo "${{ secrets.GH_CLI_PAT }}" | gh auth login --with-token
+          gh workflow run check-updates.yml -R dennismeister93/template-test
