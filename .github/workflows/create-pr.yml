@@ -13,7 +13,7 @@ jobs:
     - name: Checkout Another Repository
       uses: actions/checkout@v4
       with:
-        repository: https://github.com/eclipse-velocitas/vehicle-app-python-template
+        repository: eclipse-velocitas/vehicle-app-python-template
 
     - name: Build devcontainer and run automated tests
       uses: devcontainers/ci@v0.3
