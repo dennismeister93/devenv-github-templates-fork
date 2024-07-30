@@ -13,7 +13,7 @@
 # SPDX-License-Identifier: Apache-2.0
 
 name: ❓ Question or general issue
-description: Approach us with a question!!!? YES No! And this is new
+description: Approach us with a question!!!? YES No! And this is new again
 title: "[Q]: "
 labels:
   - question
